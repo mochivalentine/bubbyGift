@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>                                                                                                 
+    <head>
+        
+        <title>hi bubby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="https://i.imgur.com/cd9FBn8.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img class = "wobbly" src = "https://i.imgur.com/Wn7im49.png">
+        <img class = "musicNotes" src = "https://i.imgur.com/keEkHaR.png" id = "mNotes">
+        <div class="musicContainer">
+            <audio id ="audio" src = "https://audio.jukehost.co.uk/dQPafWGmUJ5bukIAqrrHFL505BBPMyH8" volume="0.1"></audio>
+            <img class = "dangoPlayer" src = "https://i.imgur.com/kCkpvD3.png" id = "dPlayer">    
+            <img class = "dango" src = "https://i.imgur.com/rqfHvWJ.png" id = "dButton" onclick="playMusic();">
+            <div class="slideContainer">
+                <img src="https://i.imgur.com/iKJTcdq.png" class ="volumeIcon">
+                <input class ="sliderRange" type="range" id="volume1" min="0" max="1" step="0.01" value ="0.1" onchange="setVolume()">
+            </div>
+            <div class = "messageHi">
+                <center><h5>Konti na lang mauubusan na ako ideas HAHAHAHA<br>Pero 'pag 'di na online mas marami na ako pwede gawin <br> so for now, I hope you like this! :><br><br>Happy Valentine's Day bub!</h5> 
+            </div>
+
+            <script>
+                var dPlayer = document.getElementById("dPlayer");
+                var mNotes = document.getElementById("mNotes");
+                var dButton = document.getElementById("dButton");
+                var audio = document.getElementById("audio");
+                audio.volume = 0.1;
+
+                setVolume = function () {
+                    audio.volume = document.getElementById("volume1").value;
+                };
+
+                function playMusic() {
+                    if (audio.paused) {
+                        audio.play();
+                        dButton.src = "https://i.imgur.com/JJnZX4P.png";
+                        dPlayer.src = "https://s10.gifyu.com/images/now-playing0d880591b0dc70f0.gif";
+                        mNotes.src = "https://s10.gifyu.com/images/ezgif.com-gif-maker-1000faf68e1924cbe.gif";
+                        mNotes.loading = "lazy";
+                    } else {
+                        audio.pause();
+                        dButton.src = "https://i.imgur.com/rqfHvWJ.png";
+                        dPlayer.src = "https://i.imgur.com/kCkpvD3.png";
+                        mNotes.src = "https://i.imgur.com/keEkHaR.png";
+                    }
+                };
+            </script>
+
+        </div>
+        <div class = "profBanner">
+            <p>
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako 
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako 
+                BinibiniAlammobakungpanonahulogsayoNaramdamanlangbiglangpusoAkingsintaikawlangnagparamdamnitoKayasabihinmosakinAngtumatakbosaisipmoKungmahalmonarinbaako
+                IsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinakoBinibiniSabimonoonsakinAyawmopaPeroangyakapngayo'ykakaiba
+                HindikabanalilitoTotoonabanggustoakoWagnglabananangpusoAlamkongmahalmonakoKungganonhalikanatwaglumayoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhayko
+                GagawinanglahatparasayoAlamkongmahalmonarinakoIsayawmoakoSagitnangulanmahalkoKapalitmannitoybuhaykoGagawinanglahatparasayoAlamkongmahalmonarinako 
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.profBanner {
+    width: 100%;
+    font-size: 1.5vw;
+    line-height: 0.7em; 
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+p {
+    background-image: url("https://i.imgur.com/xfydDyj.png"), url("https://i.imgur.com/xfydDyj.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.02);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+    color: #cc0000;
+    margin: 0;
+}
+
+.wobbly {
+    position: fixed;
+    margin: 11.4% 0% 0% 18%; 
+    height: 8.9%;
+    width: 9%;
+}
+
+.musicNotes {
+    position: fixed;
+    margin: 1% 0% 0% 25.5%; 
+    height: 35%;
+    width: 15%;
+}
+
+.dangoPlayer {
+    margin-left: 3%;
+    height: 100%;
+    width: 75%;
+}
+
+.musicContainer{
+    z-index: 9;
+    margin: 16% 0% 0% 10%; 
+    position: fixed;
+    width: 35%;
+    height: 20.5%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1979);
+    backdrop-filter: blur(5px);
+}
+
+.dango {
+    position: fixed;
+    margin: 6% 0% 0% 3%; 
+    width: 13.5%;
+    height: 45%;
+
+}
+
+.dango:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slideContainer{
+    width: 23%;
+    margin-top: 1%;
+    margin-left: 76%;
+}
+
+.volumeIcon {
+    height: 18%;
+    width: 18%;
+    vertical-align: middle;
+}
+
+.sliderRange{
+    float: right;
+    margin-top: 4%;
+}
+
+h5 {
+    color: white;
+    font-size: 0.8vw;
+    font-family: 'Century Gothic';
+    font-style: italic;
+}
+
+.messageHi {
+    z-index: 9;
+    margin: 5% 0% 0% 10%; 
+    position: fixed;
+    width: 80%;
+    height: 73%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1979);
+    backdrop-filter: blur(5px);
+}
