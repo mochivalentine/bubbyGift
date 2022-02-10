@@ -85,7 +85,8 @@ p {
 .volumeIcon {
     height: 18%;
     width: 18%;
-    vertical-align: middle;
+    display: inline-block;
+    margin-left: 7%;
 }
 
 .sliderRange{
